@@ -56,13 +56,22 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
-  someMongodbServer: {
+  devMongodbServer: {
     adapter: 'sails-mongo',
-    host: 'localhost',
+    host: process.env.IP,
     port: 27017,
     // user: 'username',
     // password: 'password',
-    // database: 'your_mongo_db_name_here'
+    database: 'dev_mongo_db'
+  },
+
+  testMongodbServer: {
+    adapter: 'sails-mongo',
+    host: process.env.IP,
+    port: 27017,
+    // user: 'username',
+    // password: 'password',
+    database: 'test_mongo_db'
   },
 
   /***************************************************************************
@@ -80,7 +89,7 @@ module.exports.connections = {
     user: 'YOUR_POSTGRES_USER',
     password: 'YOUR_POSTGRES_PASSWORD',
     database: 'YOUR_POSTGRES_DB'
-  }
+  },
 
 
   /***************************************************************************
@@ -88,5 +97,12 @@ module.exports.connections = {
   * More adapters: https://github.com/balderdashy/sails                      *
   *                                                                          *
   ***************************************************************************/
+  couch: {                                                                       
+    adapter: 'sails-couchdb-orm',
+    host: 'localhost',
+    port: 5984,
+    username: 'myuser',
+    password: 'mypassword'                                 
+  }
 
 };
