@@ -34,10 +34,10 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ubuntu/quotes.git"
+    "url": "git://github.com/paulwoodiii/quotes.git"
   },
   "author": "ubuntu",
-  "license": "",
+  "license": "MIT",
   "devDependencies": {
     "assert": "^1.3.0",
     "grunt-mocha-test": "^0.12.7",
