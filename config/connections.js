@@ -97,12 +97,5 @@ module.exports.connections = {
   * More adapters: https://github.com/balderdashy/sails                      *
   *                                                                          *
   ***************************************************************************/
-  couch: {                                                                       
-    adapter: 'sails-couchdb-orm',
-    host: 'localhost',
-    port: 5984,
-    username: 'myuser',
-    password: 'mypassword'                                 
-  }
-
+  
 };
