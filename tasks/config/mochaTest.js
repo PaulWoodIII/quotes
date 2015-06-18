@@ -1,14 +1,16 @@
 module.exports = function(grunt) {
 
-  grunt.config.set('mochaTest', {
-      test: {
-        options: {
-          reporter: 'spec'
-        },
-        src: ['tests/**/*.spec.js']
+  grunt.config.set('mocha_istanbul', {
+    coverage: {
+      src: 'tests', // the folder, not the files
+      options: {
+        coverageFolder: 'coverage',
+        mask: '**/*.spec.js',
+        root: 'api/'
       }
+    }
   });
 
-  grunt.loadNpmTasks('grunt-mocha-test');
+  grunt.loadNpmTasks('grunt-mocha-istanbul');
 
 };

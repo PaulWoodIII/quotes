@@ -25,11 +25,13 @@ module.exports.policies = {
   * access)                                                                  *
   *                                                                          *
   ***************************************************************************/
-
-  '*': true,
-  'PostController': {
-    '*': 'isAuthenticated'
-  },
+	'*': true,
+	'PostController': {
+		'*': 'isAuthenticated'
+	},
+	'QuotesController': {
+		create: 'isAuthenticated'
+	},
   /***************************************************************************
   *                                                                          *
   * Here's an example of mapping some policies to run before a controller    *
