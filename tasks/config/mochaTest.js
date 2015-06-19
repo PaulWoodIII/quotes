@@ -6,7 +6,10 @@ module.exports = function(grunt) {
       options: {
         coverageFolder: 'coverage',
         mask: '**/*.spec.js',
-        root: 'api/'
+        root: 'api/',
+        reporter :'spec',
+        slow: 2000,
+        timeout: 10000
       }
     }
   });
