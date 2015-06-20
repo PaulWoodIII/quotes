@@ -7,9 +7,9 @@ module.exports = function(grunt) {
         coverageFolder: 'coverage',
         mask: '**/*.spec.js',
         root: 'api/',
-        reporter :'spec',
+        reporter: 'mocha-junit-reporter',
         slow: 2000,
-        timeout: 10000
+        timeout: 10000,
       }
     }
   });

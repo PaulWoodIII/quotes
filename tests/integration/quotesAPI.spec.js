@@ -8,7 +8,7 @@ var Quote = require('../../api/models/Quotes'),
 
 describe('quotes CRUD', function() {
 
-    this.timeout(10000);
+    this.timeout(30000);
 
     before(function(done) {
         // Lift Sails and start the server

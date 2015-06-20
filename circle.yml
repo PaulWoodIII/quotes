@@ -1,0 +1,18 @@
+machine:
+  environment:
+    NODE_ENV: test
+    MOCHA_FILE: $CIRCLE_TEST_REPORTS
+  node:
+    version: 0.10.35
+dependencies:
+  override:
+    - npm i -g grunt-cli
+    - npm i -g mocha
+general:
+  branches:
+    ignore:
+      - gh-pages # list of branches to ignore
+general:
+  artifacts:
+    - "coverage/" # relative to the build directory
+    - "test-results/" # a single file, relative to the build directory
