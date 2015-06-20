@@ -8,9 +8,6 @@ general:
   branches:
     ignore:
       - gh-pages # list of branches to ignore
-test:
-  post:
-    - "grunt test"
 general:
   artifacts:
     - "coverage/" # relative to the build directory
