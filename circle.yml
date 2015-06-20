@@ -6,6 +6,7 @@ machine:
     version: 0.10.35
 dependencies:
   override:
+    - npm i
     - npm i -g grunt-cli
     - npm i -g mocha
 general:

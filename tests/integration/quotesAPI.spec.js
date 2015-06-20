@@ -42,7 +42,6 @@ describe('quotes CRUD', function() {
                 }
             },
             function(err, data) {
-                console.log(err);
                 assert.ok(data);
                 done(err);
             });
