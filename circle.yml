@@ -1,7 +1,7 @@
 machine:
   environment:
     NODE_ENV: test
-    MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/
+    MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/mocha.xml
   node:
     version: 0.10.35
 dependencies:
