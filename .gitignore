@@ -98,7 +98,7 @@ lib-cov
 *.pid
 npm-debug.log
 coverage
-
+test-results
 
 
 
