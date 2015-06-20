@@ -41,7 +41,8 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "MOCHA_FILE=./test-results/mocha.xml NODE_ENV=test grunt test"
   },
   "main": "app.js",
   "repository": {

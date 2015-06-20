@@ -1,7 +1,7 @@
 machine:
   environment:
     NODE_ENV: test
-    MOCHA_FILE: ./test-results/results.xml
+    MOCHA_FILE: $CIRCLE_TEST_REPORTS
   node:
     version: 0.10.35
 general:
