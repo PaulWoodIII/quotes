@@ -4,6 +4,10 @@ machine:
     MOCHA_FILE: $CIRCLE_TEST_REPORTS
   node:
     version: 0.10.35
+dependencies:
+  override:
+    - npm i -g grunt-cli
+    - npm i -g mocha
 general:
   branches:
     ignore:
