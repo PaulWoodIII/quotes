@@ -8,7 +8,9 @@ general:
   branches:
     ignore:
       - gh-pages # list of branches to ignore
+test:
+  - grunt test
 general:
   artifacts:
-    - "coverage" # relative to the build directory
-    - "test-results" # a single file, relative to the build directory
+    - "coverage/" # relative to the build directory
+    - "test-results/" # a single file, relative to the build directory
