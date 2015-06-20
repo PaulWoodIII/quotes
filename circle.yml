@@ -1,6 +1,7 @@
 machine:
   environment:
     NODE_ENV: test
+    MOCHA_FILE: ./test-results/results.xml
   node:
     version: 0.10.35
 general:
