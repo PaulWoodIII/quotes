@@ -17,3 +17,17 @@ general:
   artifacts:
     - "coverage/" # relative to the build directory
     - "test-results/" # a single file, relative to the build directory
+deployment:
+  staging:
+    branch: master
+    codedeploy:
+      quotes:
+        application_root: /
+        region: us-east-1
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: code-deployables/quotes
+            key_pattern: quotes-{BRANCH}-{SHORT_COMMIT}
+        deployment_group: quotes-staging
+        deployment_config: CodeDeployDefault.AllAtOnce
