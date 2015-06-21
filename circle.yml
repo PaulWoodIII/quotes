@@ -19,7 +19,7 @@ general:
     - "test-results/" # a single file, relative to the build directory
 deployment:
   staging:
-    branch: master
+    branch: codedeploy
     codedeploy:
       quotes:
         application_root: /
