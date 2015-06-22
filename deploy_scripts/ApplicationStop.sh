@@ -1,3 +1,3 @@
 #!/bin/bash
-pm2 start app.js
+pm2 stop app.js
 
