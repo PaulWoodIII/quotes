@@ -28,6 +28,6 @@ deployment:
           revision_type: S3
           s3_location:
             bucket: code-deployables/quotes
-            key_pattern: quotes-{BRANCH}-{SHORT_COMMIT}
+            key_pattern: quotes-{BRANCH}-{SHORT_COMMIT}.zip
         deployment_group: quotes-staging
         deployment_config: CodeDeployDefault.AllAtOnce
