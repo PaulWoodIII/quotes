@@ -10,4 +10,3 @@ npm install
 npm install -g pm2 
 npm i -g grunt-cli
 popd
-
