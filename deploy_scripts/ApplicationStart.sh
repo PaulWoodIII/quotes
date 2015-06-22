@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo env PATH=$PATH:/home/ec2-user/.nvm/v0.10.35/bin pm2 startup ubuntu -u ec2-user
+env PATH=$PATH:/home/ec2-user/.nvm/v0.10.35/bin pm2 startup ubuntu -u ec2-user
