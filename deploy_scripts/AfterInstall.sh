@@ -7,6 +7,7 @@ nvm install v0.10.35;
 nvm alias default v0.10.35;
 nvm use default
 npm install
-npm install -g pm2 
+npm install -g pm2
+npm i -g grunt
 npm i -g grunt-cli
 popd
